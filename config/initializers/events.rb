@@ -19,7 +19,7 @@ WebsocketRails.setup do |config|
   # config.standalone = false
 
   config.standalone = true
-  uri = URI.parse(ENV["REDISTOGO_URL"])
+  uri = URI.parse('redis://redistogo:1f736fa2a27319dc45b7ebb470e04bbe@dory.redistogo.com:10177/')
   config.redis_options = {:host => uri.host, :port => uri.port, :password => uri.password}
 
   # Change to true to enable channel synchronization between
