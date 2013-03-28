@@ -44,7 +44,7 @@ Ext.define('BiofuelsModerator.view.NetworkLayer', {
     //--------------------------------------------------------------------------
 	openSocket: function(ipAddr,port,url) {
 
-    WsConnection.webSocket = new WebSocketRails('http://sleepy-temple-8942.herokuapp.com:80/websocket', false);
+    WsConnection.webSocket = new WebSocketRails('107.20.243.230:3001/websocket');
    // WsConnection.webSocket = new WebSocketRails('localhost:3000/websocket');
    // WsConnection.webSocket = new WebSocketRails('localhost:80/websocket', false);
 
